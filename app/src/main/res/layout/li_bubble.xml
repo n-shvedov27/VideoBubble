@@ -19,4 +19,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/li_bubble_thumbnail"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/li_bubble_player_view"
+        app:layout_constraintEnd_toEndOf="@+id/li_bubble_player_view"
+        app:layout_constraintStart_toStartOf="@+id/li_bubble_player_view"
+        app:layout_constraintTop_toTopOf="@+id/li_bubble_player_view" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
