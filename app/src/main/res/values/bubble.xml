@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--  размер сообщения в сжатом состоянии  -->
+    <dimen name="bubble_initial_size">230dp</dimen>
+    <!--  размер сообщения в развернутом состоянии  -->
+    <dimen name="bubble_expanded_size">260dp</dimen>
+    <!--  отступ линии прогресса просмотра от краев view  -->
+    <dimen name="bubble_timebar_buffer_path_padding">15dp</dimen>
+    <!--  ширина линии прогресса просмотра  -->
+    <dimen name="bubble_timebar_buffer_path_stroke">3dp</dimen>
+    <!--  радиус badge перемотки  -->
+    <dimen name="bubble_timebar_badge_radius">6dp</dimen>
+</resources>
