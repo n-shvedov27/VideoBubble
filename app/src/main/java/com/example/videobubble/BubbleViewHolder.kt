@@ -1,6 +1,8 @@
 package com.example.videobubble
 
+import android.graphics.Outline
 import android.view.View
+import android.view.ViewOutlineProvider
 import android.widget.ImageView
 import androidx.core.view.isVisible
 import androidx.recyclerview.widget.RecyclerView
@@ -33,6 +35,12 @@ class BubbleViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView), Coro
 
     init {
         playerView.player = player
+        itemView.outlineProvider = object : ViewOutlineProvider() {
+            override fun getOutline(view: View, outline: Outline) {
+                outline.setOval(0, 0, view.width, view.height)
+            }
+        }
+        itemView.clipToOutline = true
     }
 
     override val coroutineContext: CoroutineContext
